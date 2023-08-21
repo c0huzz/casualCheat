@@ -7,31 +7,31 @@ local X = Material.Load({
     SizeY = 350,
     Theme = "Jester",
     ColorOverrides = {
-        MainFrame = Color3.fromRGB(235,235,235)
+        MainFrame = Color3.fromRGB(124,37,235)
     }
 })
 
 local Y = X.New({
-    Title = "Visual"
+    Title = "Visuals"
 })
 
 local Z = X.New({
     Title = "Misc"
 })
 local X = X.New({
-    Title = "Beta"
+    Title = "ESP"
 })
 
 
 --Lists
 local SportMasterPrice ={
-    2150,
-    1530,
-    1530,
+    2300,
+    1600,
+    1600,
     1550,
     1000,
     1500,
-    1845
+    1900
 }
 
 local ZaraPrice ={
@@ -467,7 +467,7 @@ local B = Z.Toggle({
 })
 
 local B = Z.Toggle({
-    Text = "Auto Sell",
+    Text = "Auto Buy",
     Callback = function(Value)
         if Value then
             _G.AutoSell = true
@@ -504,7 +504,7 @@ local A = Z.Button({
 })
 
 local B = X.Toggle({
-    Text = "Esp Sport-Master",
+    Text = "Esp SportMaster",
     Callback = function(Value)
         if Value then
             _G.SportMast = true
@@ -543,7 +543,7 @@ local B = X.Toggle({
 })
 
 local B = X.Toggle({
-    Text = "Esp Zara-Shop",
+    Text = "Esp Zara",
     Callback = function(Value)
         if Value then
             _G.Zara = true
@@ -580,7 +580,7 @@ local B = X.Toggle({
     Enabled = false
 })
 local B = X.Toggle({
-    Text = "Esp Bape-Shop",
+    Text = "Esp Bape",
     Callback = function(Value)
         if Value then
             _G.Bape = true
@@ -617,7 +617,7 @@ local B = X.Toggle({
     Enabled = false
 })
 local B = X.Toggle({
-    Text = "Esp Balenciaga-Shop",
+    Text = "Esp Balenciaga",
     Callback = function(Value)
         if Value then
             _G.Balanciaga = true
@@ -655,7 +655,7 @@ local B = X.Toggle({
 })
 
 local B = X.Toggle({
-    Text = "Esp Stone Island-Shop",
+    Text = "Esp Stone Island",
     Callback = function(Value)
         if Value then
             _G.StoneIsland = true
@@ -693,7 +693,7 @@ local B = X.Toggle({
 })
 
 local B = X.Toggle({
-    Text = "Esp Chrome-Shop",
+    Text = "Esp Chrome Hearts",
     Callback = function(Value)
         if Value then
             _G.ChromeH = true
@@ -731,7 +731,7 @@ local B = X.Toggle({
 })
 
 local B = X.Toggle({
-    Text = "Esp LouisVuitton-Shop",
+    Text = "Esp Louis Vuitton",
     Callback = function(Value)
         if Value then
             _G.LouisV = true
@@ -769,7 +769,7 @@ local B = X.Toggle({
 })
 
 local B = X.Toggle({
-    Text = "Esp Gucci-Shop",
+    Text = "Esp Gucci",
     Callback = function(Value)
         if Value then
             _G.Gucci = true
@@ -807,7 +807,7 @@ local B = X.Toggle({
 })
 
 local B = X.Toggle({
-    Text = "Esp Exclusive-Clotches",
+    Text = "Esp Rare Clotch",
     Callback = function(Value)
         if Value then
             _G.Exclus = true
@@ -842,7 +842,7 @@ local C = Z.Slider({
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
     end,
     Min = 16,
-    Max = 37,
+    Max = 42,
     Def = 16
 })
 
