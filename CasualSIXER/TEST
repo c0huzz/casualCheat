@@ -11,14 +11,14 @@ local X = Material.Load({
 })
 
 local Y = X.New({
-    Title = "Visuals"
+    Title = "Визуал"
 })
 
 local Z = X.New({
-    Title = "Misc"
+    Title = "Микс"
 })
 local X = X.New({
-    Title = "ESP"
+    Title = "Подсветка"
 })
 
 
