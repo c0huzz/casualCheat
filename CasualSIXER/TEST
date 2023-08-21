@@ -299,13 +299,13 @@ _G.Exclus = true
 --functions
 
 local D = Z.Dropdown({
-    Text = "Auto PickUp Mode:",
+    Text = "Режим АвтоПодбирания:",
     Callback = function(Value)
         Mode = Value
     end,
     Options = {
-        "Legit",
-        "Teleport"
+        "Легит",
+        "Телепорт"
     },
     Menu = {
         Information = function(self)
@@ -318,7 +318,7 @@ local D = Z.Dropdown({
 Mode = "Legit"
 
 local B = Z.Toggle({
-    Text = "Auto PickUp Clotching",
+    Text = "АвтоПодбирание Вещей",
     Callback = function(Value)
         if Value then
             _G.AutoPick = true
@@ -356,7 +356,7 @@ local B = Z.Toggle({
 })
 
 local B = Z.Toggle({
-    Text = "Droped Clotching Max Distance",
+    Text = "Макс.Дистан.Выброшенных вещей",
     Callback = function(Value)
         if Value then
             _G.MaxActiv = true
@@ -381,7 +381,7 @@ local B = Z.Toggle({
 })
 
 local B = Y.Toggle({
-    Text = "Droped Clotching Esp",
+    Text = "Подсветка Выброшенных Вещей",
     Callback = function(Value)
         if Value then
             _G.DropedEsp = true
@@ -416,7 +416,7 @@ local B = Y.Toggle({
 
 
 local B = Z.Toggle({
-    Text = "Instance grab Clotching",
+    Text = "Многовенное Подбирание Вещей",
     Callback = function(Value)
         if Value then
             _G.InstBuy = true
@@ -443,7 +443,7 @@ local B = Z.Toggle({
 
 
 local B = Z.Toggle({
-    Text = "Auto Grab",
+    Text = "Авто Взятие",
     Callback = function(Value)
         if Value then
             _G.AutoGrab = true
@@ -466,7 +466,7 @@ local B = Z.Toggle({
 })
 
 local B = Z.Toggle({
-    Text = "Auto Buy",
+    Text = "Авто Покупка",
     Callback = function(Value)
         if Value then
             _G.AutoSell = true
@@ -496,14 +496,14 @@ local B = Z.Toggle({
     Enabled = false
 })
 local A = Z.Button({
-    Text = "Server Hop",
+    Text = "Сервер Хоп",
     Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/LNxGXjkG"))()
     end,
 })
 
 local B = X.Toggle({
-    Text = "Esp SportMaster",
+    Text = "СпортМастер",
     Callback = function(Value)
         if Value then
             _G.SportMast = true
@@ -542,7 +542,7 @@ local B = X.Toggle({
 })
 
 local B = X.Toggle({
-    Text = "Esp Zara",
+    Text = "Зара",
     Callback = function(Value)
         if Value then
             _G.Zara = true
@@ -579,7 +579,7 @@ local B = X.Toggle({
     Enabled = false
 })
 local B = X.Toggle({
-    Text = "Esp Bape",
+    Text = "Бейп",
     Callback = function(Value)
         if Value then
             _G.Bape = true
@@ -616,7 +616,7 @@ local B = X.Toggle({
     Enabled = false
 })
 local B = X.Toggle({
-    Text = "Esp Balenciaga",
+    Text = "Балансиага",
     Callback = function(Value)
         if Value then
             _G.Balanciaga = true
@@ -654,7 +654,7 @@ local B = X.Toggle({
 })
 
 local B = X.Toggle({
-    Text = "Esp Stone Island",
+    Text = "Стоник",
     Callback = function(Value)
         if Value then
             _G.StoneIsland = true
@@ -692,7 +692,7 @@ local B = X.Toggle({
 })
 
 local B = X.Toggle({
-    Text = "Esp Chrome Hearts",
+    Text = "Хром",
     Callback = function(Value)
         if Value then
             _G.ChromeH = true
@@ -730,7 +730,7 @@ local B = X.Toggle({
 })
 
 local B = X.Toggle({
-    Text = "Esp Louis Vuitton",
+    Text = "Луис Витон",
     Callback = function(Value)
         if Value then
             _G.LouisV = true
@@ -768,7 +768,7 @@ local B = X.Toggle({
 })
 
 local B = X.Toggle({
-    Text = "Esp Gucci",
+    Text = "Гуччи",
     Callback = function(Value)
         if Value then
             _G.Gucci = true
@@ -806,7 +806,7 @@ local B = X.Toggle({
 })
 
 local B = X.Toggle({
-    Text = "Esp Rare Clotch",
+    Text = "Редкие Вещи",
     Callback = function(Value)
         if Value then
             _G.Exclus = true
@@ -836,7 +836,7 @@ local B = X.Toggle({
 ---------------------------------------------------------------
 
 local C = Z.Slider({
-    Text = "WalkSpeed",
+    Text = "Скорость Ходьбы",
     Callback = function(Value)
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
     end,
