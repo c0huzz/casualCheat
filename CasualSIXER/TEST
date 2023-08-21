@@ -5,7 +5,7 @@ local X = Material.Load({
     Style = 2,
     SizeX = 500,
     SizeY = 350,
-    Theme = "Aqua",
+    Theme = "Dark",
     ColorOverrides = {
     }
 })
