@@ -1,4 +1,4 @@
-local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
+local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/c0huzz/casualCheat/main/CasualSIXER/filter.lua"))()
 
 local X = Material.Load({
     Title = "C0huZz Cheat",
